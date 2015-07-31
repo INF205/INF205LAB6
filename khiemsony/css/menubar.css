@@ -1,0 +1,95 @@
+﻿nav{
+    width:100%;
+    height: 35px;
+    background-color:#E01B22;
+}
+
+.navigation{
+    margin: 0px 228px;
+	display:inline-block;
+	position:relative;
+	perspective: 2000px;
+	-moz-perspective: 2000px;
+	-webkit-perspective: 2000px;
+	-o-perspective: 2000px;
+	-ms-perspective: 2000px;
+	list-style: none outside none;
+}
+
+.navigation li{
+	display:inline-block;
+	position:relative;
+	float:left;
+	text-transform:uppercase;
+	letter-spacing:2px;
+    height: 35px;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+	transform-style: preserve-3d;  
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;  
+	-ms-transform-style: preserve-3d;  
+}
+
+#current{
+    background-image:linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-moz-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-webkit-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-o-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-ms-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+    color:#232323;
+}
+
+.navigation span{
+    color: white;
+    float:left;
+    display:block;
+    padding:0px 20px;
+	height:35px;
+    line-height: 35px;
+    background-color:red;
+    position:relative;
+	cursor:pointer;
+	background-image:linear-gradient(top,#E01B22,#E01B22);
+	background-image:-moz-linear-gradient(top,#E01B22,#E01B22);
+	background-image:-webkit-linear-gradient(top,#E01B22,#E01B22);
+	background-image:-o-linear-gradient(top,#E01B22,#E01B22);
+	background-image:-ms-linear-gradient(top,#E01B22,#E01B22);
+	transform:translateZ(15px);
+	-moz-transform:translateZ(15px);
+	-webkit-transform:translateZ(15px);
+	-o-transform:translateZ(15px);
+	-ms-transform:translateZ(15px);
+}
+
+.navigation a{
+	box-shadow:0 0 5px rgba(0,0,0,0.5);
+    position:absolute;
+    top:15px;
+    left:0;
+    display:block;
+    padding:0 20px;
+	height: 34px;
+    line-height: 35px;
+	text-decoration: none;
+	color:#232323;	
+    background-image:linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-moz-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-webkit-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-o-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-ms-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	-webkit-transform:rotateX(-90deg);
+	-moz-transform:rotateX(-90deg);
+	-o-transform:rotateX(-90deg);
+	-ms-transform:rotateX(-90deg);
+	transform:rotateX(-90deg);
+}
+
+.navigation li:hover{
+	-webkit-transform:rotateX(90deg);  
+	-moz-transform:rotateX(90deg);
+}

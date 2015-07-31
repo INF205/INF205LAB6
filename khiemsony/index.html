@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="images/manutdlogo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menubar.css" />
+	<title>ManUtd Store</title>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/simplegallery.js"></script>
+    <script>
+        var mygallery = new simpleGallery({
+            wrapperid: "simplegallery1", //ID of main gallery container,
+            dimensions: [1000, 567], //width/height of gallery in pixels. Should reflect dimensions of the images exactly
+            imagearray: [
+                ["images/slider/04.jpg", "", "", ""],
+                ["images/slider/01.png", "", "", ""],
+		        ["images/slider/02.jpg", "", "", ""],
+		        ["images/slider/03.png", "", "", ""],
+				["images/slider/05.jpg", "", "", ""]
+            ],
+            autoplay: [true, 2000, 2], //thời gian autoplay slide
+            persist: false, 
+            fadeduration: 500,
+            oninit: function () {
+            },
+            onslide: function (curslide, i) {
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wapper">
+        <!--Start header-->
+        <header>
+            <div id="logo">
+                <img src="images/logo.png" />
+            </div>
+        </header><!--End header-->
+  
+        <nav><!-- Start Menu -->
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                    <span id="current">Home</span>
+                </li>   
+                <li>
+                    <a href="products.html">Products</a>
+                    <span>Products</span>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                    <span>About Us</span>
+                </li>
+                <li>
+                    <a href="contact.html">Contacts Us</a>
+                    <span>Contacts Us</span>
+                </li>
+            </ul>
+        </nav><!-- End Menu -->
+
+        <!--Start main-->
+        <article class="main">
+        <!-------Start Slider------->
+            <section id="simplegallery1"></section>
+        <!-------End Slider------->
+        <!-------Start Box------->
+            <section id="bigbox">
+                <div id="boxone">
+                    <a href="index.html">
+                        <div class="titlebox">
+                            <h2>NEW THIRD KIT</h2>
+                            <span>SHOP NOW > </span>
+                        </div>
+                        <img src="images/box1a.jpg" />
+                    </a>
+
+                    <a href="index.html">
+                        <div class="titlebox black">
+                            <h2>GIFTS <br /> & DVDS</h2>
+                            <span>SHOP NOW > </span>
+                        </div>
+                        <img src="images/box1b.jpg" />
+                    </a>
+                </div>
+
+                <div id="boxone">
+                    <a href="index.html">
+                        <div class="titlebox black">
+                            <h2>NIGHTWEAR</h2>
+                            <span>SHOP NOW > </span>
+                        </div>
+                        <img src="images/box2a.jpg" />
+                    </a>
+
+                    <a href="index.html">
+                        <div class="titlebox black">
+                            <h2>EQUIPMENT</h2>
+                            <span>SHOP NOW > </span>
+                        </div>
+                        <img src="images/box2b.jpg" />
+                    </a>
+                </div>
+
+                <div id="boxone">
+                    <a href="index.html">
+                        <img src="images/box3.gif" id="gif" />
+                    </a>
+                </div>
+
+            </section>
+        <!-------End Box------->
+
+        </article><!--End main-->
+
+        <!--Start Footer-->
+        <footer>
+            <div id="mainfooter">
+                <div id="boxfooter">
+                    <a title="rorate" href="index.html"><img id="rorate" src="images/manutdlogo.png" /></a>
+                </div>
+                <div id="boxfooter">
+                    <h4> GET HELP</h4>
+                    <ul>
+                        <li><a href="#">Login/Register</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">How to order</a></li>
+                        <li><a href="#">Delivery Info</a></li>
+                        <li><a href="#">Returns And Exchanges</a></li>
+                    </ul>
+                </div>
+
+                <div id="boxfooter">
+                    <h4> SECURITY</h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+
+                <div id="boxsocial">
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/manchesterunited" class="facebook"></a></li>
+                        <li><a href="https://twitter.com/ManUtd" class="twitter"></a></li>  
+                        <li><a href="https://plus.google.com/+manutd" class="google"></a></li>
+                        <li><a href="www.tumblr.com/tagged/manchester-united" class="tumblr"></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p> Copyright &copy; 2014 Design By <a style="color: #E01B22; text-decoration:none;" href="https://www.facebook.com/supmonster">KHIEMNGUYEN </a>
+                    Powered by <a style="color: #FE3905; text-decoration:none;" href="www.poly.edu.vn">FPOLY</a></p>
+        </footer><!--End footer-->
+    </div>
+</body>
+</html>
